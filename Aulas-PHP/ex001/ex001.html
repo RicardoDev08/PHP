@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex001</title>
+</head>
+<body>
+    <form method="post" action="ex001.php">
+        <fieldset id="dados">
+            <legend>Dados Pessoais</legend> 
+                
+                <p>Nome <input type="text" name = "nome" id="nome" size="20" maxlength="20" placeholder="Ex.: Gun"></p>
+                
+                <p>RG <input type="text" name="rg" id="rg" size="20" maxlength="12" placeholder="Ex.:0.000.000"></p>
+
+                <p>CPF <input type="text" name="cpf" id="cpf" size="20" maxlength="14" placeholder="Ex.:000.000.000-00"></p>
+
+                <p>Endereço <input type="text" name="end" id="end" size="20" maxlength="50" placeholder="Ex.:Rua da Pamonha Seca"></p>
+
+                <p>Idade <input type="number" name="idade" id="idade" size="20" maxlength="3" placeholder=""></p>
+
+                <p>Data <input type="date" name="data" id="data" size="20" maxlength="10" placeholder="00/00/0000"></p>
+
+            </fieldset>
+            
+            <fieldset id="dados_2">
+            <p><b>Sexo</b> <br> 
+                
+                <input type="radio" name=sexo value="Masculino" size="20"> Masculino
+                <input type="radio" name="sexo" value="Feminino"> Feminino 
+                <input type="radio" name="sexo" value="Outro"> Outro
+            
+            </p>
+        </fieldset>
+        
+        <fieldset id="dados_3">
+           
+            <b>Estação preferida</b> <br>
+            <input type="checkbox" name="est_1" id="est_1" size="20">
+            <label for="est_1">Primave ra</label> 
+            <input type="checkbox" name="est_2" id="est_2" size="20">
+            <label for="est_2">Verão</label>
+            <input type="checkbox" name="est_3" id="est_3" size="20">
+            <label for="est_3">Outono</label> 
+            <input type="checkbox" name="est_4" id="est_4" size="20">
+            <label for="est_4">Inverno</label> 
+            
+        </fieldset>
+
+        <input type="submit" value="Enviar">
+    </form> 
+
+    <br><br><br><br><br>
+
+    <!--formulario post/radio-->
+    <form method="post" action="formulario_radio.php">
+        <B>Qual seu sistema operacional?</B><br>
+        <input type="radio" name=sistema value="Windows98"> Win 98
+        <input type="radio" name=sistema value="Windows XP"> Win XP
+        <input type="radio" name=sistema value="Outros" checked> Outros
+        <input type="submit">
+    </form>
+ 
+    <!--formulario post/check-->
+    <form method="post" action="formulario_check.php">
+        
+        <b>Qual a melhor opção?</b>
+        
+        <br>
+        
+        <input type="checkbox" id="opção" name="option[]" value="opção boa" checked>
+            <label for="opção">Opção Boa</label>
+        <input type="checkbox"  id="opção2" name="option[]" value="opção ruim">
+            <label for="opção2">Opção Ruim</label>
+        <input type="submit">
+    </form>
+    
+</body>
+</html>
