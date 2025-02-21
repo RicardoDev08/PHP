@@ -12,18 +12,23 @@
         <br><input type="number" name="comprimento" id="comprimento" required>
         <br><p>Medida da largura:</p>
         <br><input type="number" name="largura" id="largura" required>
+        <br><input type="submit" value="calcular">
     </form>
     <?php
-    $comprimento = $_POST["comprimento"];
-    $largura = $_POST["largura"];
+    if ($_SERVER["REQUEST_METHOD"] == "POST"){
+        $comprimento = $_POST["comprimento"];
+        $largura = $_POST["largura"];
 
+        
     function AreaRetangulo($comprimento, $largura){
         $area = $comprimento * $largura;
         return $area;
     };
     $resultado = AreaRetangulo($comprimento,$largura);
-    echo "A area do retângulo" .$resultado    
+    echo "A area do retângulo" .$resultado;    
   
+}
+
     
     
     ?>
