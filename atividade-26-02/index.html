@@ -3,31 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>forms</title>
+    <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <form method="POST" action="">
-        <legend>Dados pessoais</legend>
-        <fieldset class="bloco-forms">
-            <p>nome: <input type="text" name="nome" id="nome"></p>
-            <p>Data de nascimento <input type="date" name="dnascimento" id="dnascimento"></p>
-            <p>CPF : <input type="number" name="cpf" id="cpf"></p>
-            <p>RG : <input type="number" name="rg" id="rg"></p>
-            <p>Idade: <input type="number" name="idade" id="idade"></p>
-            <p>Endereço : <input type="text" name="endereco" id="endereco"></p>
-            <P>Cidade : <input type="text" name="cidade" id="cidade"></P>
-            <p>Estado: <input type="text" name="estado" id="estado"></p>
-            <p>celular: <input type="number" name="fone" id="fone"></p>
-            <p>Email: <input type="text" name="email" id="email"></p>
-            <p>Senha: <input type="password" name="senha" id="senha"></p>
-            <p>li e concordo com os termos: <input type="checkbox" name="termo" id="termo"></p>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" required>
+            
+            <label for="dnascimento">Data de Nascimento:</label>
+            <input type="date" name="dnascimento" id="dnascimento" required>
+            
+            <label for="cpf">CPF:</label>
+            <input type="text" name="cpf" id="cpf" required>
+            
+            <label for="rg">RG:</label>
+            <input type="text" name="rg" id="rg" required>
+            
+            <label for="idade">Idade:</label>
+            <input type="number" name="idade" id="idade" required>
+            
+            <label for="endereco">Endereço:</label>
+            <input type="text" name="endereco" id="endereco" required>
+            
+            <label for="cidade">Cidade:</label>
+            <input type="text" name="cidade" id="cidade" required>
+            
+            <label for="estado">Estado:</label>
+            <input type="text" name="estado" id="estado" required>
+            
+            <label for="fone">Celular:</label>
+            <input type="tel" name="fone" id="fone" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+            
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" id="senha" required>
+            
+            <label>
+                <input type="checkbox" name="termo" id="termo" required>
+                Li e concordo com os termos
+            </label>
+            
             <div class="container-button">
                 <button id="reset" type="reset">Limpar</button>
                 <button id="submit" type="submit">Enviar</button>
-            </div>    
+            </div>
         </fieldset>
-        
     </form>
 </body>
 </html>
