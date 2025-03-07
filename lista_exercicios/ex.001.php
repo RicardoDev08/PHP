@@ -14,6 +14,7 @@
     <?php
     $num1 = $_POST["pnumero"];
     $num2 = $_POST["snumero"];
+
     $soma = $num1 + $num2;
     $subtracao = $num1 - $num2;
     $multiplicacao = $num1 * $num2;
